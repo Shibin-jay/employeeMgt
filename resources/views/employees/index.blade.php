@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
 <div class="container mt-4">
-    <button id="addEmployee" class="btn btn-success">Add Employee</button>
-
     <table id="employeeTable" class="table table-bordered">
         <thead>
             <tr>
@@ -87,7 +85,6 @@ $(document).ready(function() {
         e.preventDefault();
         let id = $('#employee_id').val();
         let url = id ? `/employees/${id}` : '/employees';
-        // let method = id ? 'PUT' : 'POST';
 
         $.ajax({
             url: url,
