@@ -20,7 +20,7 @@ class EmployeeController extends Controller
                 return '<button class="btn btn-sm btn-primary edit" data-id="'.$employee->id.'">Edit</button>
                         <button class="btn btn-sm btn-danger delete" data-id="'.$employee->id.'">Delete</button>';
             })
-            ->rawColumns(['actions']) // Allow HTML in the actions column
+            ->rawColumns(['actions'])
             ->make(true);
     }
 

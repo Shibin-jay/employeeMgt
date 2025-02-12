@@ -18,6 +18,7 @@
             </tr>
         </thead>
     </table>
+    <button id="addEmployee" class="btn btn-success">Add Employee</button>
 </div>
 
 <!-- Add/Edit Employee Modal -->
